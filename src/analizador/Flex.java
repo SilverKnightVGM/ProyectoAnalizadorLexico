@@ -8,13 +8,15 @@ public class Flex {
 
     public static void main(String[] args) {
         try {
-            String path = getWorkingDirectory() + "\\src\\analizador\\lexer.flex";
-            generadorLexer(path);
+//            String path = getWorkingDirectory() + "\\src\\analizador\\lexer.flex";
+//            generadorLexer(path);
 
-//            String input = (JOptionPane.showInputDialog("Ingrese el identificador"));
-//            AnalizadorJFlex analizador = new AnalizadorJFlex(new StringReader(input));
-//
-//            System.out.println("Expresion Regular=" + analizador.yylex());
+            while (true) {                
+                String input = (JOptionPane.showInputDialog("Ingrese el identificador"));
+                AnalizadorJFlex analizador = new AnalizadorJFlex(new StringReader(input));
+                
+                System.out.println("Expresion Regular=" + analizador.yylex());
+            }
             
         } catch (Exception ex) {
             System.out.println("ERROR LEXICO || " + ex);
