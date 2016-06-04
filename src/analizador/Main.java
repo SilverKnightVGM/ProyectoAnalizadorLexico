@@ -26,7 +26,7 @@ public class Main extends javax.swing.JFrame {
      */
     
     //Cantidad de expresiones encontradas
-    int cantExp = 7;
+    int cantExp = 10;
  
     
     
@@ -83,6 +83,11 @@ public class Main extends javax.swing.JFrame {
         txt_val9.setVisible(false);
         txt_areaComp9.setVisible(false);
         jScrollPane10.setVisible(false);
+        
+        //Elemento 10
+        txt_val10.setVisible(false);
+        txt_areaComp10.setVisible(false);
+        jScrollPane11.setVisible(false);
     } 
     
     public void ShowComponent1 (){
@@ -140,6 +145,12 @@ public class Main extends javax.swing.JFrame {
         jScrollPane10.setVisible(true);
     }
     
+    public void ShowComponent10 (){
+        txt_val10.setVisible(true);
+        txt_areaComp10.setVisible(true);
+        jScrollPane11.setVisible(true);
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -182,6 +193,9 @@ public class Main extends javax.swing.JFrame {
         txt_val9 = new javax.swing.JLabel();
         jScrollPane10 = new javax.swing.JScrollPane();
         txt_areaComp9 = new javax.swing.JTextArea();
+        jScrollPane11 = new javax.swing.JScrollPane();
+        txt_areaComp10 = new javax.swing.JTextArea();
+        txt_val10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -272,6 +286,13 @@ public class Main extends javax.swing.JFrame {
         txt_areaComp9.setRows(5);
         jScrollPane10.setViewportView(txt_areaComp9);
 
+        txt_areaComp10.setEditable(false);
+        txt_areaComp10.setColumns(20);
+        txt_areaComp10.setRows(5);
+        jScrollPane11.setViewportView(txt_areaComp10);
+
+        txt_val10.setText("txt_val10");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -316,7 +337,11 @@ public class Main extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txt_val7)))
+                            .addComponent(txt_val7))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_val10)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -333,7 +358,7 @@ public class Main extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txt_val9))))
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -365,10 +390,13 @@ public class Main extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(txt_val7)
-                                .addGap(102, 102, 102))
-                            .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(txt_val7)
+                                    .addComponent(txt_val10))
+                                .addGap(102, 102, 102)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(txt_val5)
@@ -499,6 +527,21 @@ public class Main extends javax.swing.JFrame {
             setSize(850,465);
             }
             
+            if (cantExp == 10)
+            {
+            ShowComponent1();
+            ShowComponent2();
+            ShowComponent3();
+            ShowComponent4();
+            ShowComponent5();
+            ShowComponent6();
+            ShowComponent7();
+            ShowComponent8();
+            ShowComponent9();
+            ShowComponent10();
+            setSize(1040,465);
+            }
+            
         }
     }//GEN-LAST:event_btn_ingActionPerformed
 
@@ -551,6 +594,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
+    private javax.swing.JScrollPane jScrollPane11;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
@@ -561,6 +605,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextArea txt_areaComp1;
+    private javax.swing.JTextArea txt_areaComp10;
     private javax.swing.JTextArea txt_areaComp2;
     private javax.swing.JTextArea txt_areaComp3;
     private javax.swing.JTextArea txt_areaComp4;
@@ -571,6 +616,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextArea txt_areaComp9;
     private javax.swing.JTextArea txt_areaExp;
     private javax.swing.JLabel txt_val1;
+    private javax.swing.JLabel txt_val10;
     private javax.swing.JLabel txt_val2;
     private javax.swing.JLabel txt_val3;
     private javax.swing.JLabel txt_val4;

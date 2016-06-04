@@ -77,6 +77,11 @@
                           <Component id="jScrollPane8" alignment="0" min="-2" pref="180" max="-2" attributes="0"/>
                           <Component id="txt_val7" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane11" alignment="0" min="-2" pref="180" max="-2" attributes="0"/>
+                          <Component id="txt_val10" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -101,7 +106,7 @@
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="18" max="32767" attributes="0"/>
+              <EmptySpace pref="22" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -141,11 +146,15 @@
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="jScrollPane5" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="txt_val7" min="-2" max="-2" attributes="0"/>
+                          <Component id="jScrollPane8" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jScrollPane11" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="txt_val7" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txt_val10" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
                               <EmptySpace min="102" pref="102" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="jScrollPane8" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -413,5 +422,26 @@
         </Component>
       </SubComponents>
     </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane11">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="txt_areaComp10">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="txt_val10">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="txt_val10"/>
+      </Properties>
+    </Component>
   </SubComponents>
 </Form>
