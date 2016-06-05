@@ -7,7 +7,6 @@ public enum Tokens {
     RESTA,
     MULTIPLICACION,
     DIVISION,
-    POTENCIA,
     ABRE_PARENTESIS,
     CIERRA_PARENTESIS,
     ERROR,
