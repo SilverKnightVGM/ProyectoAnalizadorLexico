@@ -531,8 +531,11 @@ public class Main extends javax.swing.JFrame {
                         checkExp(expresiones.get(i-1), txt_areaComp10);
                         break;
                     default:
-                        JOptionPane.showMessageDialog(this, "Too many expressions, max 10", null, JOptionPane.WARNING_MESSAGE);
-                        break;
+                        if (i > 10) {
+                            JOptionPane.showMessageDialog(this, "Too many expressions, max 10", null, JOptionPane.WARNING_MESSAGE);
+                            i = expresiones.size();
+                            break;
+                        }
                 }
 
             }
@@ -551,6 +554,7 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
         HideComponents();
         setSize(242,356);
+        txt_areaExp.setText("");
     }//GEN-LAST:event_btn_limpiarActionPerformed
 
     private void txt_areaExpKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_areaExpKeyTyped
@@ -645,11 +649,13 @@ public class Main extends javax.swing.JFrame {
                 }
             }
             
-            if((new_s.matches("^-?\\d+$")) || balanced == 0){
+            if((new_s.matches("^-?\\d+$")) || (balanced == 0)){
                 textArea.append("Expresion Regular= ERROR");
             }else{
                 textArea.append("Expresion Regular=" + analizador.yylex().toString());
             }
+            
+            System.out.println((new_s.matches("(.*)[()](.*)")));
 
 //            System.out.println("Expresion Regular=" + analizador.yylex());
 //            System.out.println("----------------");
