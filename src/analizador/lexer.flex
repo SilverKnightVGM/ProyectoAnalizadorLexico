@@ -19,5 +19,5 @@ public String Tipo;
 "/" {Tipo=yytext(); return DIVISION;}
 "(" {Tipo=yytext(); return ABRE_PARENTESIS;}
 ")" {Tipo=yytext(); return CIERRA_PARENTESIS;}
-({D}+{Op}{1}{D}+)+ {Tipo=yytext(); return VALIDA;}
+({Esp}*{D}+{Esp}*{Op}{1}{Esp}*)+{D}+{Esp}* {Tipo=yytext(); return VALIDA;}
 .*|,+ {return ERROR;}
