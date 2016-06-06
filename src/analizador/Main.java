@@ -75,7 +75,8 @@ public class Main extends javax.swing.JFrame {
         //Elemento 6
         txt_val6.setVisible(false);
         txt_areaComp6.setVisible(false);
-        jScrollPane6.setVisible(false);
+        jScrollPane7.setVisible(false);
+        txt_areaComp6.setText("");
         
         //Elemento 7
         txt_val7.setVisible(false);
