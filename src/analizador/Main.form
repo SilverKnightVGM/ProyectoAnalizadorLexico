@@ -90,6 +90,9 @@
             <Property name="columns" type="int" value="20"/>
             <Property name="rows" type="int" value="5"/>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_areaExpKeyTyped"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
@@ -401,52 +404,52 @@
         </Container>
         <Component class="javax.swing.JLabel" name="txt_val1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="txt_val1"/>
+            <Property name="text" type="java.lang.String" value="Expresi&#xf3;n 1"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="txt_val2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="txt_val2"/>
+            <Property name="text" type="java.lang.String" value="Expresi&#xf3;n 2"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="txt_val3">
           <Properties>
-            <Property name="text" type="java.lang.String" value="txt_val3"/>
+            <Property name="text" type="java.lang.String" value="Expresi&#xf3;n 3"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="txt_val4">
           <Properties>
-            <Property name="text" type="java.lang.String" value="txt_val4"/>
+            <Property name="text" type="java.lang.String" value="Expresi&#xf3;n 4"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="txt_val5">
           <Properties>
-            <Property name="text" type="java.lang.String" value="txt_val5"/>
+            <Property name="text" type="java.lang.String" value="Expresi&#xf3;n 5"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="txt_val6">
           <Properties>
-            <Property name="text" type="java.lang.String" value="txt_val6"/>
+            <Property name="text" type="java.lang.String" value="Expresi&#xf3;n 6"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="txt_val7">
           <Properties>
-            <Property name="text" type="java.lang.String" value="txt_val7"/>
+            <Property name="text" type="java.lang.String" value="Expresi&#xf3;n 7"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="txt_val8">
           <Properties>
-            <Property name="text" type="java.lang.String" value="txt_val8"/>
+            <Property name="text" type="java.lang.String" value="Expresi&#xf3;n 8"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="txt_val9">
           <Properties>
-            <Property name="text" type="java.lang.String" value="txt_val9"/>
+            <Property name="text" type="java.lang.String" value="Expresi&#xf3;n 9"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="txt_val10">
           <Properties>
-            <Property name="text" type="java.lang.String" value="txt_val10"/>
+            <Property name="text" type="java.lang.String" value="Expresi&#xf3;n 10"/>
           </Properties>
         </Component>
       </SubComponents>

@@ -22,7 +22,6 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.SwingUtilities;
-import jdk.internal.org.objectweb.asm.tree.analysis.Interpreter;
 /**
  *
  * @author bogar
@@ -228,6 +227,11 @@ public class Main extends javax.swing.JFrame {
 
         txt_areaExp.setColumns(20);
         txt_areaExp.setRows(5);
+        txt_areaExp.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_areaExpKeyTyped(evt);
+            }
+        });
         jScrollPane1.setViewportView(txt_areaExp);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -299,25 +303,25 @@ public class Main extends javax.swing.JFrame {
         txt_areaComp4.setRows(5);
         jScrollPane5.setViewportView(txt_areaComp4);
 
-        txt_val1.setText("txt_val1");
+        txt_val1.setText("Expresión 1");
 
-        txt_val2.setText("txt_val2");
+        txt_val2.setText("Expresión 2");
 
-        txt_val3.setText("txt_val3");
+        txt_val3.setText("Expresión 3");
 
-        txt_val4.setText("txt_val4");
+        txt_val4.setText("Expresión 4");
 
-        txt_val5.setText("txt_val5");
+        txt_val5.setText("Expresión 5");
 
-        txt_val6.setText("txt_val6");
+        txt_val6.setText("Expresión 6");
 
-        txt_val7.setText("txt_val7");
+        txt_val7.setText("Expresión 7");
 
-        txt_val8.setText("txt_val8");
+        txt_val8.setText("Expresión 8");
 
-        txt_val9.setText("txt_val9");
+        txt_val9.setText("Expresión 9");
 
-        txt_val10.setText("txt_val10");
+        txt_val10.setText("Expresión 10");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -549,6 +553,12 @@ public class Main extends javax.swing.JFrame {
         setSize(242,356);
     }//GEN-LAST:event_btn_limpiarActionPerformed
 
+    private void txt_areaExpKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_areaExpKeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar(); 
+         if(Character.isLetter(c)&&!evt.isAltDown­()){ evt.consume(); } 
+    }//GEN-LAST:event_txt_areaExpKeyTyped
+
     /**
      * @param args the command line arguments
      */
@@ -635,7 +645,7 @@ public class Main extends javax.swing.JFrame {
                 }
             }
             
-            if(new_s.matches("^-?\\d+$")){
+            if((new_s.matches("^-?\\d+$")) || balanced == 0){
                 textArea.append("Expresion Regular= ERROR");
             }else{
                 textArea.append("Expresion Regular=" + analizador.yylex().toString());
